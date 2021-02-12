@@ -5,8 +5,8 @@ const fetch = require("node-fetch");
 // App initialization
 const app = express();
 const PORT = process.env.PORT || 3000;
-// const INTERVAL = (1000 * 60 * 60 * 24);
-const INTERVAL = 5000;
+const INTERVAL = (1000 * 60 * 60 * 24);
+// const INTERVAL = 5000;
 
 // Middleware stack: GET request --> POST request
 app.use(initiateRequests);
